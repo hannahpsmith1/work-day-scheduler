@@ -16,7 +16,7 @@ setInterval(function(){styleUpdate() }, 3000);
 ```
 <p> I was able to continually update the function that stylize the planner without having to reload the page.  </p>
 
-(https://user-images.githubusercontent.com/59800839/85814650-43efa400-b71b-11ea-9f0a-58f134c8e24c.gif)
+![continual update](https://user-images.githubusercontent.com/59800839/85814650-43efa400-b71b-11ea-9f0a-58f134c8e24c.gif)
 
 ---
 
