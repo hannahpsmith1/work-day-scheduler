@@ -1,5 +1,5 @@
 # work-day-scheduler
-homework 5
+homework 5 - create a day planner (for work hours) that shows the future in green, the present in red, and the past in grey. Any input in the text area should be saved to local storage. 
 
 
 ## Deployed Link
