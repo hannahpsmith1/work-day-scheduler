@@ -1,5 +1,4 @@
-console.log(this)
-// change name of key, textboxID, name of button
+// console.log(this)
 function storage(key, boxId, buttonId){
     var nineBox = $(boxId).val()
     localStorage.getItem("timeNine")
@@ -31,47 +30,21 @@ console.log((moment().format("h A")))
 console.log(this)
 
 
-// var time = moment().format("H")-3;
-// var time = Date.now().getHours();
-// console.log(time)
 styleUpdate ()
-// // grab each of the time blocks
-// $("#col-sm-10").each(function () {
-//   // 'this' refers to each selection made by the query
-//   console.log(this);
-//   // get the current time info from the query (you have to save it in the form of an 'id' or something)
-//   var elTime = $(this).attr('id');
-//   // Logic - Add styling depending on the status: past, present, future
-//   if (time > elTime) {
-//     // past
-//   }
-//   else if (time === elTime) { 
-//     // present
-//   }
-//   else {
-//     // Future
-//   }
-// });
+
 
 function styleUpdate () {
     var time = parseInt(moment().format("H"));
     // time++
     // time = time%24
-    console.log("hello")
-    // grab each of the time blocks
+    // lines 38 and 39 were used to test the conditional formatting without having to wait for the top of the hour
     $(".col-sm-10").each(function () {
     // 'this' refers to each selection made by the query
     var elTime =$(this).parent().attr("id");
-    // $(".col-sm-10").css("background-color","red");
-    // $(this).css("background-color","red");
-    // get the current time info from the query (you have to save it in the form of an 'id' or something)
-    // var elTime = $(this).attr('id');
-    // Logic - Add styling depending on the status: past, present, future
     console.log(time)
     console.log(elTime)
     if (time > elTime) {
-        // console.log(time)
-        // console.log(elTime)
+// this will remove all classes and then only apply the classes associated with past present or future
         $(this).removeClass();
         $(this).addClass("col-sm-10 past");
     }
@@ -85,11 +58,8 @@ function styleUpdate () {
     }
   });
 
-
-
-// console.log("heloo")
-// $(".col-sm-10").css("background-color","red");
+// This will update the page without a need for refresh every 15 minutes
   }
-  setInterval(function(){styleUpdate() }, 3000);
+  setInterval(function(){styleUpdate() }, 900000);
 
 

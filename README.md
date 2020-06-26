@@ -1,6 +1,5 @@
 # work-day-scheduler
 homework 5
-https://github.com/hannahpsmith1/work-day-scheduler/issues/1#issue-645965152
 
 
 ## Deployed Link
@@ -11,12 +10,12 @@ https://github.com/hannahpsmith1/work-day-scheduler/issues/1#issue-645965152
 
 ```
 
-setInterval(function(){styleUpdate() }, 3000);
+setInterval(function(){styleUpdate() }, 900000);
 
 ```
-<p> I was able to continually update the function that stylize the planner without having to reload the page.  </p>
+<p> I was able to continually update the function that stylize the planner without having to reload the page.  This will happen every 15 minutes.  View the dynamic updating below.  </p>
 
-![continual update](https://user-images.githubusercontent.com/59800839/85814650-43efa400-b71b-11ea-9f0a-58f134c8e24c.gif)
+![Install_Repo](https://user-images.githubusercontent.com/59800839/85814650-43efa400-b71b-11ea-9f0a-58f134c8e24c.gif)
 
 ---
 
